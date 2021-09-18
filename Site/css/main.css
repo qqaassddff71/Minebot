@@ -1,0 +1,110 @@
+    * {
+        background-color: #232323;
+        font-family: Noto Sans, sans-serif;
+    }
+    
+     :root {
+        --smaller-text: 12px;
+        --details: 14px;
+        --body-text: 16px;
+        --body-text-large: 18px;
+        --subtitles: 18px;
+        --title: 24px;
+        --title-large: 28px;
+        --main-title-small: 32px;
+        --main-title-medium: 38px;
+        --main-title-large: 42px;
+        /* color */
+        --section-background-color: #323232;
+        --main-secondary-color: red;
+    }
+    
+    .section {
+        background-color: var(--section-background-color);
+        border-radius: 0px 10px 10px 0px;
+        border-left: 5px solid var(--main-secondary-color);
+        padding: 40px;
+        max-height: 225px;
+        overflow: auto;
+    }
+    
+    .section-title {
+        background-color: var(--section-background-color);
+        font-size: var(--subtitles);
+        font-weight: bold;
+    }
+    
+    .section-text {
+        font-size: var(--body-text);
+    }
+    
+    .section p,
+    a,
+    br {
+        background-color: var(--section-background-color);
+    }
+    /* Font size
+    Smaller text => 12px
+    Details => 14px
+    Body text => 16/18px
+    Subtitles => 18px
+    Title => 24/28px
+    Main title => 32/38/42px
+
+*/
+    
+    .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .titre-page-accueil {
+        text-align: center;
+        font-size: var(--main-title-large);
+    }
+    
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+    li a:hover,
+    .dropdown:hover .dropbtn {
+        background-color: red;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0px;
+    }
+    
+    .section a:link {
+        color: red;
+    }
+    
+    .section a:visited {
+        color: red;
+    }
