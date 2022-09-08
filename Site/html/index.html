@@ -1,67 +1,149 @@
-<!DOCTYPE html>
-<html lang = "fr">
+<!doctype html>
 
-    <head>
-        <title> Home page </title>
-          <meta   charset = "UTF-8">
-          <meta   name    = "description" content = "Minebot discord bot">
-          <meta   name    = "keywords" content    = "Minebot">
-          <meta   name    = "author" content      = "qasdf7">
-          <meta   name    = "viewport" content    = "width=device-width, initial-scale=1.0">
-          <script src     = "..\js\main.js" defer></script>
-          <link   rel     = "stylesheet" type     = "text/css" href = "..\css\main.css" />
-    </head>
 
-    <body>
-        <div class = "header">
-        </div>
-        <div class = "navbar-container">
-        <div class = "navbar">
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "dashboard.html">Dashboard</a></li>
-                <li><a href = "contact.html">Contact</a></li>
-                <li><a href = "about.html">About</a></li>
-            </ul> 
-        </div>
-        </div>
-        <div class = "center">
-        <div class = "titre-page-accueil">
-              <h1>Minebot</h1>
-            </div>
+<html lang="fr">
 
-        <!-- Début de la page -->
-        <div class = "section" id = "explication-bot">
-        <div class = "explication-bot">
-        <div class = "section-title">
-            <a>Qu'est ce que Minebot ?</a>
-            </div>
-            <div class = "section-text">
-                <p>Minebot est un RPG sous la forme d'un bot discord. Pour progresser, il faut miner des ressources pour gagner de l'exp.</p>
-            </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A Basic HTML5 Template</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="./script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</head>
+
+
+
+<body style="background-color:#13191d;">
+
+    <div class="container d-flex align-items-center justify-content-center;">
+
+        <table class="table table-hover table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="1" rowspan="2">Matières</th>
+                    <th colspan="1" rowspan="2">Coeff.</th>
+                    <th colspan="2">Notes</th>
+                </tr>
+                <tr>
+                    <th colspan="1">Première</th>
+                    <th colspan="1">Terminale</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Enseignement Scientifique</th>
+                    <td>3</td>
+                    <td><input type="number" id="noteEs1"></td>
+                    <td><input type="number" id="noteEs2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">EPS</th>
+                    <td>3</td>
+                    <td><input type="number" id="noteEps1"></td>
+                    <td><input type="number" id="noteEps2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">LVA</th>
+                    <td>3</td>
+                    <td><input type="number" id="noteLva1"></td>
+                    <td><input type="number" id="noteLva2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">LVB</th>
+                    <td>3</td>
+                    <td><input type="number" id="noteLvb1"></td>
+                    <td><input type="number" id="noteLvb2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Histoire Géographie</th>
+                    <td>3</td>
+                    <td><input type="number" id="noteHg1"></td>
+                    <td><input type="number" id="noteHg2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">EMC</th>
+                    <td>1</td>
+                    <td><input type="number" id="noteEmc1"></td>
+                    <td><input type="number" id="noteEmc2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Spécialité 1</th>
+                    <td>8</td>
+                    <td><input type="number" id="noteSpe1"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Français</th>
+                    <td>10</td>
+                    <td><input type="number" id="noteFr"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">Spécialité 2</th>
+                    <td>16</td>
+                    <td></td>
+                    <td><input type="number" id="noteSpe2"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Spécialité 3</th>
+                    <td>16</td>
+                    <td></td>
+                    <td><input type="number" id="noteSpe3"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Philosophie</th>
+                    <td>8</td>
+                    <td></td>
+                    <td><input type="number" id="notePhilo"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Grand Oral</th>
+                    <td>10</td>
+                    <td></td>
+                    <td><input type="number" id="noteGo"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Option 1</th>
+                    <td>2</td>
+                    <td></td>
+                    <td><input type="number" id="noteOption1"></td>
+                </tr>
+                <tr>
+                    <th scope="row">Option 2</th>
+                    <td>2</td>
+                    <td></td>
+                    <td><input type="number" id="noteOption2"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br>
+        <table class="table table-hover table-dark table-bordered">
+            <thead>
+                <tr>
+                    <th colspan="1" rowspan="1">Note</th>
+                    <th colspan="1" rowspan="1"><span id="total"></span></th>
+                </tr>
+                <tr>
+                    <th colspan="1" rowspan="1">Résultat</th>
+                    <th colspan="1" rowspan="1"><span id="mention"></span></th>
+                </tr>
+
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div class="fixed-bottom d-flex justify-content-center" id="footer">
+            <a href="https://stackoverflow.com/users/14972893/qasdf7"><img src="https://stackoverflow.com/users/flair/14972893.png?theme=dark" width="208" height="58" alt="profile for qasdf7 at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for qasdf7 at Stack Overflow, Q&amp;A for professional and enthusiast programmers"></a>
         </div>
-        </div>
-        <br />
-        <div class = "section" id = "utilisation-du-bot">
-        <div class = "utilisation-du-bot">
-        <div class = "section-title">
-            <a>Comment se servir du bot ?</a>
-            </div>
-            <div    class           = "section-text">
-            <p>Pour utiliser le bot, il faut d'abord l'ajouter à votre serveur <a href = "#ajout-du-bot">(cliquez ici)</a>.</p>
-            </div>
-        </div>
-        </div>
-        <br />
-        <div class = "section" id = "ajout-du-bot">
-        <div class = "ajout-du-bot">
-        <div class = "section-title">
-            <a>Comment ajouter le bot ?</a>
-            </div>
-            <div class = "section-text">
-                <p>Pour ajouter le bot, c'est tout simple. Il vous suffit de cliquer sur ce lien: <a href="https://discord.com/oauth2/authorize?client_id=888709118813175858&scope=bot&permissions=805314622">Clique</a>.</p>
-            </div>
-        </div>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
