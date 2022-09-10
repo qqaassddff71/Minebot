@@ -4,14 +4,13 @@ var option1 = false
 var option2 = false
 
 document.addEventListener("keyup", validingInput)
-
-
+window.addEventListener('load', validingInput)
 
 function validingInput() {
     
     let casesValides = 0
-    
     for (let i = 0; i < matieres.length; i++) {
+        
         let cell = document.getElementById(matieres[i])
 
         if (cell.value) {
@@ -77,6 +76,8 @@ function validingInput() {
 
     if (casesValides == matieres.length) {
         updateResults()
+    } else {
+        clearResults()
     }
 }
 
@@ -122,4 +123,10 @@ function updateResults() {
     } else {
         mentionCell.innerHTML = "Wow impressionnant, tu as le bac avec la mention Très bien !!"
     }
+}
+
+function clearResults() {
+    document.getElementById("mention").innerHTML = ""
+    document.getElementById("total").innerHTML = ""
+
 }
