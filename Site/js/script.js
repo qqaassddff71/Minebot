@@ -73,7 +73,7 @@ function validingInput() {
         cell.classList.remove('bg-succes')
     }
 
-    if (casesValides = matieres.length) {
+    if (casesValides == matieres.length) {
         updateResults()
     }
 }
