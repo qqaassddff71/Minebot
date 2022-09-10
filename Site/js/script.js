@@ -8,8 +8,10 @@ document.addEventListener("keyup", validingInput)
 
 
 function validingInput() {
+    
+    let casesValides = 0
+    
     for (let i = 0; i < matieres.length; i++) {
-        let casesValides = 0
         let cell = document.getElementById(matieres[i])
 
         if (cell.value) {
